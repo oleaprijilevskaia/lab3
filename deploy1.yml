@@ -1,0 +1,23 @@
+metadata:
+  name:demo
+  lables:
+  app:spring-boot
+spec:
+  selector:
+  matchLabels:
+app:spring-boot
+temlate:
+metadata:
+labels:
+app:spring-boot
+spec:conteiners:
+-name:spring-boot
+image:po/server4:v1
+imagePullPolicy: Always
+resoutces:
+limit:
+cpu:500m
+memory:1Gi
+requests:
+cpu:500m
+memory:1Gi
